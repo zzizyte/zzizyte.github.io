@@ -6,55 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me. Skaiste Zizyte</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="container">
-        <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <div class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis">
-                <a href="#">
-                    <img src="logo1.jpg">
-                </a>
-            </div>
-            <div class="top-right">
-                <nav class="nav-item">
-                    <ul>
-                        <li><a href="#">About you</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top mb-5">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                My CV
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section class="main-content">
-            <div>
-                <div class="info">
+    <section id="intro">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start">
                     <h1>ABOUT ME</h1>
-                    <a>Hard-working, inquisitive and learning
-                        driven with the ability to work in a group
-                        and/or alone. Good problem-solving and
+                    <p>Hard-working, inquisitive, and learning-
+                        driven with the ability to work both in a group
+                        and independently. Good problem-solving and
                         time management skills. I am motivated
                         to advance my skills and knowledge in
                         programming, and I am excited to take
                         on new challenges and opportunities to
-                        learn and grow in this field.</a>
+                        learn and grow in this field.</p>
                 </div>
-                <div class="photo"></div>
+                <div class="col-md-5 text-center">
+                    <img class="img-fluid" src="photos\sz_image_side.jpg" alt="Skaiste_Z">
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer>
-        <div class="footer-container">
-            <div>&copy;2024. Skaistė Žižytė. All Rights Reserved.</div>
+    <div class="py-4 mt-5 border-top">
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center ">
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="text-body-secondary">&copy;2024. Skaistė Žižytė. All Rights Reserved.</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li><a class="LinkedIn"
+                href="https://www.linkedin.com/in/skaist%C4%97-%C5%BEi%C5%BEyt%C4%97-34867a213/">
+                <img src="#" alt="LinkedIn-logo">
+            </a>
+        </li>
+            <li> 
+                <a class="mail" href="mailto:zzizyte@gmail.com">
+                <img src="#" alt="mail-logo">
+            </a>
+        </li>
+            <li>
+                <a class="GitHub" href="https://github.com/zzizyte">
+                <img src="#" alt="GitHub">
+            </a>
+        </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <!-- <footer>
+        <div class="footer container d-flex justify-content-between py-3">
+            <div class="d-flex p-2">&copy;2024. Skaistė Žižytė. All Rights Reserved.</div>
             <div>
                 <nav class="footer-nav">
-                    <div class="social-links">
+                    <div class="d-flex p-2">
                         <a class="LinkedIn"
                             href="https://www.linkedin.com/in/skaist%C4%97-%C5%BEi%C5%BEyt%C4%97-34867a213/">
                             <img src="#" alt="LinkedIn-logo">
@@ -69,8 +101,10 @@
                 </nav>
             </div>
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </footer> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
